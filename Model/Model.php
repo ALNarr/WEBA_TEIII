@@ -11,6 +11,7 @@ class Model {
         }
     } 
 
+<<<<<<< HEAD
     // Obtenir tous les projets sans tâches
 public function getProjects(): array {
     $stmt = $this->db->prepare("SELECT id, name, deadline FROM project ORDER BY id");
@@ -105,5 +106,8 @@ public function projectExists(int $projectId): bool {
     $stmt->execute([$projectId]);
     return $stmt->fetchColumn() > 0;
 }
+=======
+    // TODO
+>>>>>>> d31d56c (Connexion reussie)
 }
 ?>
