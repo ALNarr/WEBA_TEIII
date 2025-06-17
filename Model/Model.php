@@ -23,7 +23,7 @@ class Model {
         $projects = $this->getProjects();
         
         foreach ($projects as &$project) {
-            $project['tasks'] = $this->getTasksByProjectId($project['id']);
+            $project['tasks'] = $this->getTasksByProjectId((int)$project['id']);
         }
         
         return $projects;
